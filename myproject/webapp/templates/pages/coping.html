@@ -1,0 +1,257 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+<section class="doctors" id="doctors">
+
+    <h1 class="doctors-heading"> Our <span>Professional</span> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/static/media/babae.png/" alt="">
+            <h3>Rimat Maris Taclibon Mitra</h3>
+            <h2 id="rimat">Unavailable</h2>
+            <p>Monday</p>
+            {% if user.is_superuser %}
+            <label class="switch">
+                <input type="checkbox" id="toggles" placeholder="Ma'am Rimat">
+                <span class="slider round"></span>
+            </label>
+            {% else %}
+            {% endif %}
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="/static/media/lalaki.png/" alt="">
+            <h3>Ace Rodriguez</h3>
+            <h2 id="ace">Unavailable</h2>
+            <p>Tuesday</p>
+            {% if user.is_superuser %}
+            <label class="switch">
+                <input type="checkbox" id="toggles1" placeholder="Sir Ace">
+                <span class="slider round"></span>
+            </label>
+            {% else %}
+            {% endif %}
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+</section>
+
+
+
+<script>
+
+    const toggles = document.getElementById('toggles');
+    const rimat = document.getElementById('rimat');
+
+    toggles.addEventListener('change', function () {
+        if (this.checked) {
+            rimat.innerText = "Available";
+            rimat.style.color = "green";
+        } else {
+            rimat.innerText = "Unavailable";
+            rimat.style.color = "red";
+        }
+    });
+
+</script>
+
+
+<script>
+
+    const toggles1 = document.getElementById('toggles1');
+    const ace = document.getElementById('ace');
+
+    toggles1.addEventListener('change', function () {
+        if (this.checked) {
+            ace.innerText = "Available";
+            ace.style.color = "green";
+        } else {
+            ace.innerText = "Unavailable";
+            ace.style.color = "red";
+        }
+    });
+
+</script>
+
+
+
+<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+    #heading {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+</style>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+    .doctors {
+        --green: #16a085;
+        --black: #444;
+        --light-color: #111;
+        --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+        --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+        --border: .2rem solid var(--green);
+    }
+
+    .doctors-heading {
+        text-align: center;
+        padding-bottom: 1rem;
+        text-shadow: var(--text-shadow);
+        color: var(--black);
+        font-size: 45px;
+        letter-spacing: .1rem;
+        margin-left: 5%;
+    }
+
+    .doctors .box-container {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 20px;
+        margin-top: 1rem;
+        margin-bottom: -5%;
+        margin-left: 20%;
+    }
+
+        .doctors .box-container .box {
+            text-align: center;
+            background: #fff;
+            border-radius: 5rem;
+            border: var(--border);
+            box-shadow: var(--box-shadow);
+            padding: 5%;
+            width: 40%;
+        }
+
+            .doctors .box-container .box img {
+                height: 20rem;
+                width: 20rem;
+                border: var(--border);
+                border-radius: 2.5rem;
+                margin-top: 1rem;
+                margin-bottom: -10%;
+            }
+
+            .doctors .box-container .box:hover img {
+                transform: scale(1.1);
+                transition: all .2s linear;
+            }
+
+
+            .doctors .box-container .box h3 {
+                color: var(--black);
+                font-size: 1.5rem;
+                margin-bottom: 5%;
+                margin-top: 15%;
+            }
+
+            .doctors .box-container .box span {
+                color: var(--green);
+                font-size: 1.5rem;
+            }
+
+            .doctors .box-container .box .share {
+                padding-top: 2rem;
+            }
+
+                .doctors .box-container .box .share a {
+                    height: 3rem;
+                    width: 3rem;
+                    line-height: 2.5rem;
+                    font-size: 2rem;
+                    color: var(--green);
+                    border-radius: .5rem;
+                    border: var(--border);
+                    margin: .3rem;
+                }
+
+                    .doctors .box-container .box .share a:hover {
+                        background: var(--green);
+                        color: #fff;
+                        box-shadow: var(--box-shadow);
+                    }
+
+
+</style>
+
+
+
+{% endblock  %}

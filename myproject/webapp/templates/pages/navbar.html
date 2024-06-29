@@ -1,0 +1,202 @@
+{% load static %}
+{% block content %}
+
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </span>
+                        <span class="title"> Brighter Mind</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href=http://127.0.0.1:8000>
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:8000/category/">
+                        <span class="icon">
+                            <ion-icon name="extension-puzzle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Coping Techniques</span>
+                    </a>
+                </li>
+
+                {% if user.is_staff %}
+
+                <li>
+                    <a href="http://127.0.0.1:8000/about/">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">About</span>
+                    </a>
+                </li>
+
+
+                {% if not user.is_superuser %}
+
+                <li>
+                    <a href="http://127.0.0.1:8000/profile">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:8000/moodtracker/">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mood Tracker </span>
+                    </a>
+                </li>
+
+
+                {% else %}
+                {% endif %}
+
+                <li>
+                    <a href="http://127.0.0.1:8000/contact/">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Feedback</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:8000/coping/">
+                        <span class="icon">
+                            <ion-icon name="medkit-outline"></ion-icon>
+                        </span>
+                        <span class="title">Professional</span>
+                    </a>
+                </li>
+
+
+
+
+
+                {% if user.is_superuser %}
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+
+
+                <li>
+                    <a href="http://127.0.0.1:8000/pro">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">View Profiles</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:8000/feedback/">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="title">View Feedbacks</span>
+                    </a>
+                </li>
+                {% else %}
+                {% endif %}
+
+
+
+
+                <li>
+                    <a href="http://127.0.0.1:8000/signout/">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+                {% else %}
+                {% endif %}
+
+                {% if not user.is_staff %}
+                <li>
+                    <a href="http://127.0.0.1:8000/signup/">
+                        <span class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Up</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://127.0.0.1:8000/signin/">
+                        <span class="icon">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign In</span>
+                    </a>
+                </li>
+                {% else %}
+                {% endif %}
+
+
+            </ul>
+        </div>
+    </div>
+
+
+        <!-- ========================= Main ==================== -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+
+
+
+            <div class="user">
+
+            </div>
+        </div>
+    
+</body>
+
+<script src="{% static 'js/script.js'%}"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+{% endblock %}

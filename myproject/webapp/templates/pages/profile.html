@@ -1,0 +1,30 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+<div class="profile-wrapper">
+    <div class="user-card">
+        <div class="user-card-img">
+            <img src="/static/media/blank.webp/" alt="">
+        </div>
+
+        {% for tot in total %}
+        <div class="user-card-info">
+            <h2> {{tot.First_Name}} {{tot.Last_Name}} </h2>
+            <p><span>Email: {{tot.Email}} </span></p>
+            <p><span>Status:</span> </p>
+            <p><span>About Me:</span> </p>
+            <p> <a href="{% url 'update' tot.id %}"> Update </a>  </p>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+
+{% endblock  %}

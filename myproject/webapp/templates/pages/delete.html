@@ -1,0 +1,14 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+<p> Are you sure you want to delete {{register}}</p>
+
+<form method="POST">
+    {% csrf_token %}
+<a href="{% url 'pro'  %}"> Cancel</a>
+
+    <input type="submit" name="Confirm" />
+</form>
+
+{% endblock  %}

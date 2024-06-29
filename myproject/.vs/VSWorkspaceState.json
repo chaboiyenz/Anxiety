@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapp",
+    "\\webapp\\static",
+    "\\webapp\\static\\css",
+    "\\webapp\\static\\js",
+    "\\webapp\\static\\media",
+    "\\webapp\\templates",
+    "\\webapp\\templates\\pages"
+  ],
+  "PreviewInSolutionExplorer": false
+}

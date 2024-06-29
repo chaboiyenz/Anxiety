@@ -1,0 +1,37 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="attendance">
+    <div style="overflow-x:auto;" class="attendance-list">
+        <h1> User's Feedback </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID </th>
+                    <th>Username</th>
+                    <th>Email </th>
+                    <th>Phone Number</th>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for feed in feedback %}
+                <tr>
+                    <td> {{feed.id}} </td>
+                    <td> {{feed.Username}} </td>
+                    <td> {{feed.Email_Address}} </td>
+                    <td> {{feed.Phone_Number}} </td>
+                    <td> {{feed.Feed}} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+{% endblock  %}

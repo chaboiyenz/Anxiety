@@ -1,0 +1,28 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<form class="signups" action="/signin/" method="POST">
+	{% csrf_token %}
+	<h1> Sign In</h1><br />
+
+	<p> Username: </p>
+	<input type="text" id="username" name="username" required /><br />
+
+	<p> Password: </p>
+	<input type="password" id="pass1" name="pass1" required />
+	<br />
+	<h4 style="color:red" align="center">
+		{% for mes in messages %}
+		{{mes}}
+		{% endfor %}
+	</h4> <br />
+	<button class="signinbtn" type="submit">Log In</button>
+
+</form>
+
+
+{% endblock  %}

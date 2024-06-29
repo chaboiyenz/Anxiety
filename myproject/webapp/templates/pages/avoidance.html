@@ -1,0 +1,86 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="avoidance-container">
+    <h1> Avoidance-focused </h1>
+    <a href="http://127.0.0.1:8000/category/"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="avoidance-box-container">
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/exercise.jpg" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Exercise</h3>
+                <p>Exercise is a subset of physical activity that is planned, structured, and repetitive and has as a final or an intermediate objective the improvement or maintenance of physical fitness.</p><br />
+                <a href="http://127.0.0.1:8000/avoidance1/" class="avoidance-btn"> View Activities </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/naturebased.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Nature-based Videos</h3>
+                <p>
+                    Nature-based videos are audiovisual recordings that showcase natural landscapes, wildlife, and environmental scenes, designed to evoke a sense of connection with nature and promote relaxation, stress relief, and mental well-being.
+                </p>
+                <a href="http://127.0.0.1:8000/avoidance2/" class="avoidance-btn"> View Videos </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/grounding.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Grounding-exercises</h3>
+                <p>Grounding exercises are techniques used to help individuals reconnect with the present moment and alleviate symptoms of anxiety, dissociation, or distress by anchoring themselves in their physical surroundings.</p><br />
+                <button onclick="groundtogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/distraction.jpg" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Distraction</h3>
+                <p>Distraction avoidance coping involves actively avoiding or suppressing thoughts, emotions, or situations that cause stress or discomfort.</p><br /><br /><br /><br />
+                <button onclick="distracttogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="time-popup" id="ground-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="groundtogglePopup()">&times;</div>
+                <h1> Mind Management </h1>
+                <p>
+                    And not just any helmet. You need a well fitting helmet, that has been purchased no more than 10 years ago.
+                <p>
+            </div>
+        </div>
+
+        <div class="time-popup" id="distract-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="distracttogglePopup()">&times;</div>
+                <h1> Mind Management </h1>
+                <p>
+                    And not just any helmet. You need a well fitting helmet, that has been purchased no more than 10 years ago.
+                <p>
+            </div>
+        </div>
+        {% endblock  %}

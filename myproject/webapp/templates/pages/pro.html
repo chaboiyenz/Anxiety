@@ -1,0 +1,44 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+
+            
+
+<section class="attendance">
+    <div style="overflow-x:auto;" class="attendance-list">
+        <h1> User's Profile </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Date Joined</th>
+                    <th>Update User Profile</th>
+                    <th>Delete User Profile</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for reg in register %}
+                <tr>
+                    <td> {{reg.id}} </td>
+                    <td> {{reg.First_Name}} </td>
+                    <td> {{reg.Last_Name}} </td>
+                    <td> {{reg.Email}} </td>
+                    <td> {{reg.Date_Join}} </td>
+                    <td> <a href="{% url 'update' reg.id %}"> Update </a>  </td>
+                    <td> <a href="{% url 'delete' reg.id %}"> Delete </a>  </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+    {% endblock %}

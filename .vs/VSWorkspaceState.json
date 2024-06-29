@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\myproject",
+    "\\myproject\\myproject",
+    "\\myproject\\webapp",
+    "\\myproject\\webapp\\static",
+    "\\myproject\\webapp\\static\\css",
+    "\\myproject\\webapp\\static\\js",
+    "\\myproject\\webapp\\static\\media",
+    "\\myproject\\webapp\\templates",
+    "\\myproject\\webapp\\templates\\pages"
+  ],
+  "SelectedNode": "\\myproject\\webapp\\templates\\pages\\contact.html",
+  "PreviewInSolutionExplorer": false
+}

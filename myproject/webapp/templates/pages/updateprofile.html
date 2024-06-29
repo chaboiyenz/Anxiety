@@ -1,0 +1,25 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<h1>{{register.User_Name}} </h1>
+<br />
+<h2>  {{register.First_Name}} </h2>
+<br />
+<h2>  {{register.Last_Name}} </h2>
+<br />
+<h2>  {{register.Email}} </h2>
+<br />
+<h2>  {{register.Password}} </h2>
+
+
+
+<form class="signups" action="" method="POST">
+    <h1> Edit Profile </h1> <br />
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="submit" />
+</form>
+
+{% endblock  %}

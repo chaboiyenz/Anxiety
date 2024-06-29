@@ -1,0 +1,105 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="avoidance-container">
+    <h1> Problem-focused </h1>
+    <a href="http://127.0.0.1:8000/category/"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="avoidance-box-container">
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/todo.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>To-Do List</h3>
+                <p>A to-do list is a tool used to organize tasks and responsibilities, helping individuals manage their time efficiently by outlining what needs to be accomplished within a specific timeframe.</p><br /><br />
+                <a href="http://127.0.0.1:8000/problem1/" class="avoidance-btn"> View Activities </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/mind.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Mind management</h3>
+                <p>"Mind management" refers to the practice of understanding, organizing, and optimizing one's thoughts, emotions, and mental processes to achieve a desired state of well-being and productivity.</p><br />
+                <button onclick="mindtogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/time.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Time management</h3>
+                <p>Time management is the process of efficiently organizing and prioritizing tasks and activities to make the most effective use of available time, ensuring productivity and achieving goals within set deadlines.</p><br />
+                <button onclick="timetogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/counseling.webp" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Counseling</h3>
+                <p>Counseling involves the process of seeking guidance, support, and professional assistance from a trained therapist or counselor to address personal challenges, overcome obstacles, enhance self-awareness, and promote mental and emotional well-being.</p><br />
+                <a href="http://127.0.0.1:8000/coping/" class="avoidance-btn"> View Available Counselors </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="time-popup" id="time-popup1">
+        <div class="time-overlay"> </div>
+        <div class="time-content">
+            <div class="time-close-btn" onclick="timetogglePopup()">&times;</div>
+            <h1> Time Management </h1>
+            <p>
+                <br> These are list of habits that your need to practice on order to have time management: <br><br><br>
+                 Set Clear Goals: Start by identifying your short-term and long-term goals. Knowing what you want to achieve will help you prioritize tasks and allocate time accordingly. <br><br>
+Prioritize Tasks: Use techniques like the Eisenhower Matrix to categorize tasks based on their urgency and importance. Focus on completing high-priority tasks first to maximize productivity.<br><br>
+   Create a To-Do List: Make a list of tasks you need to accomplish each day. Break down larger tasks into smaller, more manageable steps. Update your list regularly and cross off tasks as you complete them.<br><br>
+   Use Time Blocking: Allocate specific blocks of time for different activities throughout your day. This helps you focus on one task at a time and avoid multitasking, which can decrease productivity.<br><br>
+    Set Deadlines: Establish deadlines for tasks to create a sense of urgency and motivation. Be realistic about your time estimates and set achievable deadlines to avoid feeling overwhelmed.<br><br>
+    Minimize Distractions: Identify and eliminate distractions in your environment, such as social media notifications or unnecessary meetings. Consider using productivity tools or apps to help you stay focused.<br><br>
+    Review and Reflect: At the end of each day or week, take time to review your progress and reflect on what worked well and what didn't. Adjust your time management strategies accordingly to improve efficiency over time.<br><br>
+            <p>
+        </div>
+    </div>
+
+    <div class="time-popup" id="mind-popup1">
+        <div class="time-overlay"> </div>
+        <div class="time-content">
+            <div class="time-close-btn" onclick="mindtogglePopup()">&times;</div>
+            <h1> Mind Management </h1>
+            <p>
+                <br><br> One popular technique for managing the mind and coping with various challenges is mindfulness. Mindfulness involves paying attention to the present moment without judgment. This practice can help individuals become more aware of their thoughts, feelings, and bodily sensations, allowing them to respond to situations more effectively rather than reacting impulsively.
+                
+                Here's a simple mindfulness exercise you can try:<br><br><br><br>
+                
+                1.Find a quiet and comfortable place to sit or lie down. <br>
+                2. Close your eyes or soften your gaze.<br>
+                3. Take a few deep breaths, focusing on the sensation of the breath entering and leaving your body.<br>
+              4. Notice any thoughts, feelings, or sensations that arise without trying to change them.<br>
+               5. Gently bring your attention back to your breath whenever you find your mind wandering.<br>
+               6. Continue this practice for a few minutes or as long as you like.</p>
+        </div>
+    </div>
+
+    {% endblock  %}

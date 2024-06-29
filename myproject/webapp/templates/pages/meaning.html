@@ -1,0 +1,86 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="avoidance-container">
+    <h1> Meaning-focused </h1>
+    <a href="http://127.0.0.1:8000/category/"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="avoidance-box-container">
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/cbt.jpg" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Cognitive Behavioral Therapy</h3>
+                <p>Cognitive Behavioral Therapy (CBT) is a psychotherapeutic approach that focuses on identifying and changing negative thought patterns and behaviors to alleviate emotional distress and improve overall mental health. It involves collaboration between the therapist and the individual to challenge and reframe unhelpful beliefs, develop coping strategies, and implement positive behavioral changes.</p>
+                <button onclick="cbttogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/naturebased.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Defusion Technique</h3>
+                <p>Defusion techniques are cognitive strategies used in acceptance and commitment therapy (ACT) to help individuals distance themselves from unhelpful thoughts, beliefs, and emotions. These techniques involve observing thoughts without judgment, recognizing them as passing mental events rather than absolute truths, and using metaphors or humor to reduce their impact and influence on behavior.</p>
+                <button onclick="defusiontogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/religion.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Turning to Religion</h3>
+                <p>Turning to religion involves seeking solace, guidance, and meaning through spiritual beliefs, practices, and community involvement during times of difficulty, uncertainty, or personal struggle.</p>
+                <button onclick="religiontogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="time-popup" id="cbt-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="cbttogglePopup()">&times;</div>
+                <h1> Mind Management </h1>
+                <p>
+                    And not just any helmet. You need a well fitting helmet, that has been purchased no more than 10 years ago.
+                <p>
+            </div>
+        </div>
+
+        <div class="time-popup" id="defusion-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="defusiontogglePopup()">&times;</div>
+                <h1> Mind Management </h1>
+                <p>
+                    And not just any helmet. You need a well fitting helmet, that has been purchased no more than 10 years ago.
+                <p>
+            </div>
+        </div>
+
+        <div class="time-popup" id="religion-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="religiontogglePopup()">&times;</div>
+                <h1> Mind Management </h1>
+                <p>
+                    And not just any helmet. You need a well fitting helmet, that has been purchased no more than 10 years ago.
+                <p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+        {% endblock  %}

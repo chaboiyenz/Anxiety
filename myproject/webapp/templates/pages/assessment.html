@@ -1,0 +1,295 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+<body class="ass-body">
+
+    <div class="ass-head">
+        <h2> DASS21 </h2>
+        <p>
+            Please read each statement and circle a number 0, 1, 2 or 3 which indicates how much the statement<br />
+            applied to you over the past week. There are no right or wrong answers. Do not spend too much
+            time on any statement.
+            The rating scale is as follows:<br /><br /><br />
+            0 Did not apply to me at <br />
+            1 Applied to me to some degree, or some of the time<br />
+            2 Applied to me to a considerable degree or a good part of time<br />
+            3 Applied to me very much or most of the time
+        </p>
+
+    </div>
+    <div class="ass-container">
+        <h2>Assessment</h2>
+
+        <div class="ass-options">
+            <p> 1. I found it hard to wind down </p>
+            <input type="radio" id="value1111" name="value1114" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value1112" name="value1114" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value1113" name="value1114" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value1114" name="value1114" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 2. I was aware of dryness of my mouth </p>
+            <input type="radio" id="value001" name="value000" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value002" name="value000" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value003" name="value000" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value000" name="value000" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 3. I couldn’t seem to experience any positive feeling at all </p>
+            <input type="radio" id="value991" name="value999" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value992" name="value999" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value993" name="value999" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value999" name="value999" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>
+                4. I experienced breathing difficulty (e.g. excessively rapid breathing,
+                breathlessness in the absence of physical exertion)
+            </p>
+            <input type="radio" id="value881" name="value888" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value882" name="value888" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value883" name="value888" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value888" name="value888" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>5. I found it difficult to work up the initiative to do things </p>
+            <input type="radio" id="value771" name="value777" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value772" name="value777" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value773" name="value777" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value777" name="value777" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 6. I tended to over-react to situations </p>
+            <input type="radio" id="value661" name="value664" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value662" name="value664" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value663" name="value664" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value664" name="value664" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 7. I experienced trembling (e.g. in the hands) </p>
+            <input type="radio" id="value551" name="value554" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value552" name="value554" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value553" name="value554" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value554" name="value554" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>8.  I felt that I was using a lot of nervous energy  </p>
+            <input type="radio" id="value441" name="value444" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value442" name="value444" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value443" name="value444" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value444" name="value444" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>
+                9. I was worried about situations in which I might panic and make a fool
+                of myself
+            </p>
+            <input type="radio" id="value331" name="value334" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value332" name="value334" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value333" name="value334" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value334" name="value334" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 10. I felt that I had nothing to look forward to </p>
+            <input type="radio" id="value221" name="value224" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value222" name="value224" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value223" name="value224" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value224" name="value224" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 11. I found myself getting agitated </p>
+            <input type="radio" id="value111" name="value11221" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value112" name="value11221" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value113" name="value11221" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value11221" name="value11221" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 12. I found it difficult to relax </p>
+            <input type="radio" id="value81" name="value88" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value82" name="value88" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value83" name="value88" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value88" name="value88" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 13. I felt down-hearted and blue </p>
+            <input type="radio" id="value71" name="value77" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value72" name="value77" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value73" name="value77" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value77" name="value77" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>
+                14. I was intolerant of anything that kept me from getting on with what I
+                was doing
+            </p>
+            <input type="radio" id="value61" name="value66" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value62" name="value66" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value63" name="value66" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value66" name="value66" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 15. I felt I was close to panic </p>
+            <input type="radio" id="value51" name="value54" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value52" name="value54" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value53" name="value54" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value54" name="value54" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 16. I was unable to become enthusiastic about anything </p>
+            <input type="radio" id="value41" name="value44" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value42" name="value44" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value43" name="value44" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value44" name="value44" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 17. I felt I wasn’t worth much as a person  </p>
+            <input type="radio" id="value31" name="value34" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value32" name="value34" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value33" name="value34" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value34" name="value34" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 18. I felt that I was rather touchy  </p>
+            <input type="radio" id="value21" name="value24" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value22" name="value24" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value23" name="value24" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value24" name="value24" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p>
+                19. I was aware of the action of my heart in the absence of physical
+                exertion (e.g. sense of heart rate increase, heart missing a beat)
+            </p>
+            <input type="radio" id="value11" name="value14" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value12" name="value14" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value13" name="value14" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value14" name="value14" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 20. I felt scared without any good reason </p>
+            <input type="radio" id="value92" name="value95" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value93" name="value95" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value94" name="value95" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value95" name="value95" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <div class="ass-options">
+            <p> 21. I felt that life was meaningless  </p>
+            <input type="radio" id="value96" name="value99" value="0" class="option">
+            <label for="value1">0</label>
+            <input type="radio" id="value97" name="value99" value="1" class="option">
+            <label for="value2">1</label>
+            <input type="radio" id="value98" name="value99" value="2" class="option">
+            <label for="value3">2</label>
+            <input type="radio" id="value99" name="value99" value="3" class="option">
+            <label for="value4">3</label>
+        </div>
+
+        <button type="button" onclick="calculateTotalScore()">Calculate Total Score</button>
+
+        <div id="totalScore"></div>
+    </div>
+
+</body>
+
+    {% endblock  %}

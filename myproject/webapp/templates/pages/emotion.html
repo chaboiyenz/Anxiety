@@ -1,0 +1,78 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+<div class="avoidance-container">
+    <h1> Emotion-focused </h1>
+    <a href="http://127.0.0.1:8000/category/"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="avoidance-box-container">
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/journal.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Journal</h3>
+                <p>
+                    Journaling is a therapeutic practice that involves regularly writing down thoughts, feelings, experiences, and reflections as a means of self-expression, self-discovery, emotional processing, and personal growth.
+                </p><br />
+                <a href="http://127.0.0.1:8000/mood/" class="avoidance-btn"> View Activities </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/yoga.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Yoga</h3>
+                <p>Yoga is a holistic practice that combines physical postures, breathing exercises, meditation, and mindfulness techniques to promote physical strength, flexibility, mental clarity, and emotional well-being.</p>
+                <a href="http://127.0.0.1:8000/avoidance2/" class="avoidance-btn"> View Activities </a>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+        <div class="avoidance-box">
+            <div class="avoidance-image">
+                <img src="/static/media/aroma.png" alt="">
+            </div>
+            <div class="avoidance-content">
+                <h3>Aromatherapy</h3>
+                <p>Aromatherapy is a holistic healing practice that involves using essential oils extracted from plants to promote physical, emotional, and mental well-being. These oils are typically inhaled, applied topically, or used in massage to evoke various therapeutic effects, such as relaxation, stress relief, improved mood, and enhanced concentration..</p>
+                <button onclick="aromatogglePopup()" class="avoidance-btn"> Show Information  </button>
+                <div class="avoidance-icons">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="time-popup" id="aroma-popup1">
+            <div class="time-overlay"> </div>
+            <div class="time-content">
+                <div class="time-close-btn" onclick="aromatogglePopup()">&times;</div>
+                <h1> Aromatherapy </h1>
+                <p>
+                    <br>How essential oils help with anxiety? <br><br><br>
+                    Essential oils and aromatherapy work by stimulating your sense of smell. The nerves in your nose then generate signals to your brain, which triggers the release of chemicals, such as serotonin and dopamine. <br>
+                    
+                   Serotonin is a chemical in your brain that modulates your mood and can help you feel calm and happy when released. Dopamine is another brain messenger involved in your psychological reward system which can enhance positive feelings. Essential oils can improve your mood by enhancing the release of serotonin and dopamine.<br><br>
+                   How to use essential oils for anxiety<br>
+There are several methods you can try to use essential oils to help reduce anxiety. <br><br>
+
+Drops<br>
+
+Add a few drops of your favorite essential oil here and there around the house to promote calm. For example, you could place a few drops of lavender oil on your pillow before you go to sleep at night. If you’re worried about the oil-causing stains, try keeping it in a saucer or a small bowl on your bedside table. <br><br>
+
+Spray<br>
+
+Using an essential oil spray is a great way to disperse your favorite oil around the room. You can mix your own spray by blending some essential oils or simply buy a premade one.<br>
+                <p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+        {% endblock  %}
